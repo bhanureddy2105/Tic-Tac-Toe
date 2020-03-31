@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
             counter.setTranslationY(-1500);
 
             if (activePlayer == 0) {
-                counter.setImageResource(R.drawable.oops);
+                counter.setImageResource(R.drawable.exe);
                 activePlayer = 1;
             } else {
-                counter.setImageResource(R.drawable.exe);
+                counter.setImageResource(R.drawable.oops);
                 activePlayer = 0;
             }
             counter.animate().translationYBy(1500).setDuration(200);
@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                     if (activePlayer == 1) {
-                        winner = "O has won!";
-                    } else if (activePlayer == 0) {
                         winner = "X has won!";
+                    } else if (activePlayer == 0) {
+                        winner = "O has won!";
                     }
                     gameActive = false;
 
